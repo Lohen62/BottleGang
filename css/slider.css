@@ -1,11 +1,20 @@
 /*slider*/
+.main-carousel
+{
+  left: 0vh;
+  margin: 0;
+  width: 100vw;
+}
+
 .carousel-cell {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .flickity-page-dots {
-  bottom: 15px;
+  position: absolute;
+  bottom: 15px !important;
 }
 
 .flickity-page-dots .dot {
@@ -21,8 +30,8 @@
 }
 
 .flickity-button{
-  background: transparent !important;
-  color: #ffffff;
+  background: transparent !important ;
+  color: #FFF !important;
 }
 /*# sourceMappingURL=style.css.map */
 /*slider*/

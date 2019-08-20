@@ -8,3 +8,5 @@
 
         <?php } ?> 
 </div>
+
+</header>

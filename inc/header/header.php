@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="flickity.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>BottleGang Accueil</title>
 </head>
@@ -16,5 +17,3 @@
 <body>
     <header>
     
-    
-    </header>
