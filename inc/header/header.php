@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/centre.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="flickity.min.css">

@@ -1,0 +1,125 @@
+.centre{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.article{
+    background-color: white;
+    top: 0;
+    margin:0;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carre{
+    height: 25vh;
+    width: 25vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    color:white;
+}
+
+.nouveautés{
+    margin-top: 2vh;
+    height: 42.5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.news{
+    height: 30vh;
+    width: 30vh; 
+    background-image: url(../img/centre/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news1{
+    height: 30vh;
+    width: 30vh;
+    background-color: #6d071a;
+}
+
+.news2{
+    height: 30vh;
+    width: 30vh;
+    background-color: #6d071a;
+}
+
+.news3{
+    height: 30vh;
+    width: 30vh;
+    background-color: #6d071a;
+}
+
+.selection{
+    margin-top: 2vh;
+    height: 42.5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.select{
+    height: 30vh;
+    width: 30vh; 
+    background-image: url(../img/centre/index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select1{
+    height: 30vh;
+    width: 30vh;
+    background-color: #6d071a;
+}
+
+.select2{
+    height: 30vh;
+    width: 30vh;
+    background-color: #6d071a;
+}
+
+.select3{
+    height: 30vh;
+    width: 30vh;
+    background-color: #6d071a;
+}
+
+.cataloguebtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trait{
+    background-color:#6d071a ;
+    height: 0.8vh;
+    width: 25vw;
+}
+
+.vins{
+    margin-top: 5vh;
+    font-size:  3vh;
+    text-align: center;
+}
+
+

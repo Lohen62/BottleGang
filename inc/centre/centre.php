@@ -1,27 +1,45 @@
 
-<div class=centre>
+<div class="centre">
+
+    <div class="article">
+        <div class="nouveautés">
+            <div class="news">
+                <div class="carre">
+                <h3 class="text">Nouveautés</h3>
+                </div>
+            </div>
+            
+            <div class="news1"></div>
+            
+            <div class="news2"></div>
+            
+            <div class="news3"></div>
+        </div>
+
+        <div class="selection">
+            <div class="select">
+            
+                <div class="carre">
+                <h3 class="text">Notre selection</h3>
+                </div>
+            </div>
+        
+            <div class="select1"></div>
+        
+            <div class="select2"></div>
+        
+            <div class="select3"></div>
     
-    <div class=nouveautés>
-        <div class=news>
-            <div class=carre></div>
-            <div class=text>Nouveautés</div>
         </div>
-        <div class=news1></div>
-        <div class=news2></div>
-        <div class=news3></div>
+
     </div>
 
-    <div class=selection>
-        <div class=select>
-            <div class=carre></div>
-            <div class=text>Notre selection</div>
-        </div>
-        <div class=selec1></div>
-        <div class=select2></div>
-        <div class=select3></div>
+    <div class="cataloguebtn">
+    
+        <div class="trait"></div>
+        
+        <div class="vins" href="#">Voir tous nos vins</div>
+    
     </div>
-
-    <div class=trait></div>
-    <div class=vins>Voir tous nos vins</div>
 
 </div>
