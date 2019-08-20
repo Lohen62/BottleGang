@@ -2,7 +2,50 @@ header
 {
     height: 100vh;
     width : 100%;
-    /* background-color: rgba(0,0,0,0.8);
+
+}
+
+.navbar
+{
+    height: 9vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
     position : fixed;
-    z-index: 999; */
+    z-index: 999; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoName
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 16vw;
+    margin-left: 4vh;
+}
+.logoName img
+{
+    object-fit: contain;
+    height : 8vh;
+}
+.logoName h1
+{
+    color : #FFF;
+    font-family: king;
+    font-size: 6vh;
+    font-weight: 100;
+}
+.menu
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu li a 
+{
+    text-decoration: none;
+    color : white;
+    margin-right: 5vh;
+    font-size: 3vh;
 }

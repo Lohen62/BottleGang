@@ -1,6 +1,19 @@
+@font-face 
+{
+    font-family: montserrat ;
+    src: url(../font/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face 
+{
+    font-family: king ;
+    src: url(../font/King_Lionel/King_lionnel.ttf);
+}
+
+
 body
 {
     margin : 0;
     overflow-x: hidden;
     width: 100vw;
+    font-family: montserrat;
 }
