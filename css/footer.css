@@ -1,5 +1,33 @@
+body,html{
+    margin: 0;
+    padding:0;
+}
+
 .footer{
+
     width: 100vw;
-    height:30vh;
-    background-color: black;
+    height:80vh;
+    background-size: cover;
+    background-image: url("../img/footer/footerImg.jpg");
+}
+#presentation{
+    position: relative;
+    top: 11vh; left: 15vw;
+    display:inline-flex;
+
+}
+.texteFooter{ 
+    font-size: 3vh;
+    margin: 0;
+    padding-left: 8vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.ligneintermediaire{
+    
+    position: relative;
+    top: 20vh; left: 36vw;
+    background-color: white;
+    height: 0.8vh;
+    width: 25vw;
 }
