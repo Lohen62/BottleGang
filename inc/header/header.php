@@ -22,8 +22,8 @@
             <img src="./img/logo.png" alt="logo"><h1>Bottle Gang</h1>
         </div>
         <ul class="menu">
-            <li><a href="http://">A propos</a></li>
-            <li><a href="http://">Nos vins</a></li>
-            <li><a href="http://">Panier</a></li>
+            <li><a href="http://" class="itemMenu">A propos</a></li>
+            <li><a href="http://" class="itemMenu">Nos vins</a></li>
+            <li><a href="http://" class="itemMenu">Panier</a></li>
         </ul>
     </nav>
