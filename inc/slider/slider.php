@@ -9,4 +9,10 @@
         <?php } ?> 
 </div>
 
+<div class="infos">
+        <p class="pres">Depuis l'ouverture de leurs première cave en 1939, cette fabrique famillial de luxe, Bottle Gang , s'éfforce de produire et vendre, des vins riche, d'histoires, de qualitées, et de saveurs  uniques, afin de ravire vos palais.</p>
+        <p class="pres it">"Une belle robe pour un vin de caractère".</p>
+        <a class="btn" href="">voir nos produits</a>
+</div>
+
 </header>
