@@ -45,24 +45,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
 .news1{
     height: 30vh;
     width: 30vh;
-    background-color: #6d071a;
+    background-color: white;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
 .news2{
     height: 30vh;
     width: 30vh;
-    background-color: #6d071a;
+    background-color: white;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
 .news3{
     height: 30vh;
     width: 30vh;
-    background-color: #6d071a;
+    background-color: white;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
 .selection{
@@ -83,24 +95,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
 .select1{
     height: 30vh;
     width: 30vh;
-    background-color: #6d071a;
+    background-color: white;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
 .select2{
     height: 30vh;
     width: 30vh;
-    background-color: #6d071a;
+    background-color:white;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
 .select3{
     height: 30vh;
     width: 30vh;
-    background-color: #6d071a;
+    background-color: white;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
 .cataloguebtn{
@@ -112,7 +136,7 @@
 
 .trait{
     background-color:#6d071a ;
-    height: 0.8vh;
+    height: 0.6vh;
     width: 25vw;
 }
 
