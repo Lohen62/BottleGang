@@ -4,7 +4,7 @@
     background: #45ffff;
 }
 
-.carre{
+.car{
     position: absolute;
     transform: translate(-50%, -50%);
     border: 2px solid red;

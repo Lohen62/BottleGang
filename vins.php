@@ -1,11 +1,11 @@
 <?php include "inc/header/header.php" ?>
 
     <div class="nosVins">
-        <div class="carre rouge"></div>
-        <div class="carre rose"></div>
-        <div class="carre blanc"></div>
-        <div class="carre bord"></div>
-        <div class="carre champ"></div>
+        <div class="car rouge"></div>
+        <div class="car rose"></div>
+        <div class="car blanc"></div>
+        <div class="car bord"></div>
+        <div class="car champ"></div>
     </div>
 
 </header>
