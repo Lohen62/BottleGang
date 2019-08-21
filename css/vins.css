@@ -1,0 +1,33 @@
+.nosVins{
+    width: 100%;
+    height: 100%;
+    background: #45ffff;
+}
+
+.carre{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    width: 30vh;
+    height: 30vh;
+}
+.rouge{
+    top: 40%;
+    left: 25%;
+}
+.rose{
+    top: 40%;
+    left: 75%;
+}
+.blanc{
+    top: 75%;
+    left: 37.5%;
+}
+.bord{
+    top: 75%;
+    left: 62.5%;
+}
+.champ{
+    top: 40%;
+    left: 50%;
+}

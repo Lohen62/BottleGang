@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="flickity.min.css">
+    <link rel="stylesheet" href="./css/vins.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>BottleGang Accueil</title>
 </head>
@@ -22,8 +23,8 @@
             <img src="./img/logo.png" alt="logo"><h1>Bottle Gang</h1>
         </div>
         <ul class="menu">
-            <li><a href="http://" class="itemMenu">A propos</a></li>
-            <li><a href="http://" class="itemMenu">Nos vins</a></li>
-            <li><a href="http://" class="itemMenu">Panier</a></li>
+            <li><a href="Apropos.php" class="itemMenu">A propos</a></li>
+            <li><a href="vins.php" class="itemMenu">Nos vins</a></li>
+            <li><a href="panier.php" class="itemMenu">Panier</a></li>
         </ul>
     </nav>
