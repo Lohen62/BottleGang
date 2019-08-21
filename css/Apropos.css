@@ -4,7 +4,7 @@
 
 }
 
-h2{
+.titre{
     font-family: "titre";
     font-size: 3vh;
     text-decoration: underline white;
@@ -14,7 +14,7 @@ h2{
 .tout{
     height: 100vh;
     width: 100%;
-    background-image: url(../img/Apropos/index.jpg);
+    background-image: url(../img/Apropos/Sanstitre-1.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -28,12 +28,12 @@ h2{
 }
 
 .photo{
-    margin-top: 10vh;
+    margin-top: 20vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../img/Apropos/portrait.jpg);
-    height: 36vh;
-    width: 45vh;
+    height: 40vh;
+    width: 60vh;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -46,10 +46,10 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30vh;
-    width: 50vh;
+    height: 40vh;
+    width: 60vh;
     margin-left: 20vh;
-    margin-top: 10vh;
+    margin-top: 20vh;
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.712);
@@ -69,13 +69,14 @@ h2{
     
 }
 .histtext{
+    padding: 1.1vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 35vh;
-    width: 90vh;
+    height: 40vh;
+    width: 60vh;
     background-color: rgba(0, 0, 0, 0.76);
     color: rgb(255, 255, 255);
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
