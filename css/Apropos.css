@@ -1,0 +1,92 @@
+@font-face{
+ font-family: "titre";
+ src: url(../font/Montserrat/Montserrat-Regular.ttf);
+
+}
+
+h2{
+    font-family: "titre";
+    font-size: 3vh;
+    text-decoration: underline white;
+    font-style: italic;
+}
+
+.tout{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/Apropos/index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.personne{
+    height: 45vh;
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    margin-top: 10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/Apropos/portrait.jpg);
+    height: 36vh;
+    width: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);   
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    width: 50vh;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.712);
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);   
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+}
+
+
+.histoire{
+    margin-top: 10vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}
+.histtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 35vh;
+    width: 90vh;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);   
+    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+}
+
+.maps{
+    height : 1vh;
+    width : 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+
