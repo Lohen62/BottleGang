@@ -1,33 +1,86 @@
-.nosVins{
-    width: 100%;
-    height: 100%;
-    background: #45ffff;
+.line{
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 0.2vw;
+    background: black;
 }
 
-.car{
+.line1{
+    top: 205%;
+}
+
+.line2{
+    top: 305%;
+}
+
+.line3{
+    top: 405%;
+}
+
+.titleWine {
     position: absolute;
-    transform: translate(-50%, -50%);
-    border: 2px solid red;
-    width: 30vh;
-    height: 30vh;
-}
-.rouge{
-    top: 40%;
-    left: 25%;
-}
-.rose{
-    top: 40%;
-    left: 75%;
-}
-.blanc{
-    top: 75%;
-    left: 37.5%;
-}
-.bord{
-    top: 75%;
-    left: 62.5%;
-}
-.champ{
-    top: 40%;
+    top: 25%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+
+.white{
+    top: 125%;
+}
+
+.rose{
+    top: 225%;
+}
+
+.bord{
+    top: 325%;
+}
+
+.champ{
+    top: 425%;
+}
+
+.wine{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nosVins{
+    width: 25vw;
+    height: 50vh;
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    -webkit-box-shadow: 0px 0px 50px -30px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 50px -30px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 50px -30px rgba(0,0,0,0.75);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400vh;
+}
+
+.blanc{
+    top: 160%;
+}
+.rosé{
+    top: 260%;
+}
+.bordeaux{
+    top: 360%;
+}
+.champagne{
+    top: 460%;
 }

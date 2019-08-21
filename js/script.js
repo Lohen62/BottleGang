@@ -24,3 +24,4 @@ var flkty = new Flickity( '.main-carousel', {
   // options
 });
 console.log("fsaaaredszerteaafdsf");
+
