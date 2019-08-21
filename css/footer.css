@@ -2,7 +2,7 @@
 .footer{
     z-index: 10;
     width: 99.1vw;
-    height:53vh;
+    height:54vh;
     background-size: cover;
     background-image: url("../img/footer/footerImg.jpg");
 }
@@ -47,12 +47,12 @@
      display: flex;
      text-align: center;
      align-items: center;
-     height: 30vh;
+     height: 29vh;
 }
 .left{
      color: rgb(255, 255, 255);
      width: 50vw;
-     height: 10vh;
+     height: 16vh;
 }
 
 .right{
@@ -62,27 +62,26 @@
 }
 
 .titreFooter{
-    font-size: 2em;
+    font-size: 4vh;
 }
 .TexteFooter02{
-    font-size: 1em;
+    font-size: 2vh;
     text-align: center;
 }
 
 .SociauxFooter{
     width: 50vw;
     height: 30vh;
-    
-    
+        
 }
 
 .fab{
-    font-size: 3em;
+    font-size: 6vh;
     padding: 3vh;
     color: white;
 }
 .fas, .far{
-    font-size: 2.5em;
+    font-size: 3vh;
     color: white;
     margin-bottom: 2vh;
 }
