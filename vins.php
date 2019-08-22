@@ -13,7 +13,7 @@ require("inc/dbconnect.php");
     <div class="wine">
         <div class="main-carousel">
             <?php 
-                $sql = "SELECT * FROM vins WHERE type = 'Rouge'";
+          $sql = "SELECT * FROM vins WHERE type = 'Rouge'";
                 $data = $bdd->query($sql);
 
                 $data->setFetchMode(PDO::FETCH_OBJ);
@@ -44,37 +44,101 @@ require("inc/dbconnect.php");
 
     <div class="titleWine white"><h2>Nos Blancs</h2></div>
     <div class="wine blanc">
+        <div class="main-carousel">
+            <?php 
+          $sql = "SELECT * FROM vins WHERE type = 'Rouge'";
+                $data = $bdd->query($sql);
 
+                $data->setFetchMode(PDO::FETCH_OBJ);
+            
+            while($rows = $data->fetch())
+            {
+                // echo 'id : '. $rows->id . " / name : " . $rows->nom . "<br>";
+                echo "<div class='carousel-cell carvin'>
+                           <div class='teille'> <img class='teilleimg 'src='./img/vins/". $rows->image ."' alt=''></div>
+                           <div class='info'>
+                                <h3 class='teilletitle'>" . $rows->nom ."</h3>
+                                <p class='desk'>". $rows->description ."</p>
+                                <p class='prix'>" . $rows->prix . " € </p>
+                                <form action='./panier.php' method='post'>
+                                <input type='hidden'  name='idteille' value='".$rows->id."'>
+                                <button class='acheter'>Ajouter au panier</button>
+                            </form>        
+                           </div> 
+                      </div>";
+            }
+        
+            ?>
+ 
+        </div>    
     </div>
 
     <div class="line line1"></div>
 
     <div class="titleWine rose"><h2>Nos Rosés</h2></div>
     <div class="wine rosé">
+    <div class="main-carousel">
+            <?php 
+          $sql = "SELECT * FROM vins WHERE type = 'Rouge'";
+                $data = $bdd->query($sql);
 
+                $data->setFetchMode(PDO::FETCH_OBJ);
+            
+            while($rows = $data->fetch())
+            {
+                // echo 'id : '. $rows->id . " / name : " . $rows->nom . "<br>";
+                echo "<div class='carousel-cell carvin'>
+                           <div class='teille'> <img class='teilleimg 'src='./img/vins/". $rows->image ."' alt=''></div>
+                           <div class='info'>
+                                <h3 class='teilletitle'>" . $rows->nom ."</h3>
+                                <p class='desk'>". $rows->description ."</p>
+                                <p class='prix'>" . $rows->prix . " € </p>
+                                <form action='./panier.php' method='post'>
+                                <input type='hidden'  name='idteille' value='".$rows->id."'>
+                                <button class='acheter'>Ajouter au panier</button>
+                            </form>        
+                           </div> 
+                      </div>";
+            }
+        
+            ?>
+ 
+        </div>    
     </div>
 
     <div class="line line2"></div>
 
-    <div class="titleWine bord"><h2>Nos Bordeaux</h2></div>
+    <div class="titleWine bord"><h2>Nos Champagnes</h2></div>
     <div class="wine bordeaux">
+    <div class="main-carousel">
+            <?php 
+          $sql = "SELECT * FROM vins WHERE type = 'Rouge'";
+                $data = $bdd->query($sql);
 
+                $data->setFetchMode(PDO::FETCH_OBJ);
+            
+            while($rows = $data->fetch())
+            {
+                // echo 'id : '. $rows->id . " / name : " . $rows->nom . "<br>";
+                echo "<div class='carousel-cell carvin'>
+                           <div class='teille'> <img class='teilleimg 'src='./img/vins/". $rows->image ."' alt=''></div>
+                           <div class='info'>
+                                <h3 class='teilletitle'>" . $rows->nom ."</h3>
+                                <p class='desk'>". $rows->description ."</p>
+                                <p class='prix'>" . $rows->prix . " € </p>
+                                <form action='./panier.php' method='post'>
+                                <input type='hidden'  name='idteille' value='".$rows->id."'>
+                                <button class='acheter'>Ajouter au panier</button>
+                            </form>        
+                           </div> 
+                      </div>";
+            }
+        
+            ?>
+ 
+        </div>    
     </div>
 
-    <div class="line line3"></div>
-
-    <div class="titleWine champ"><h2>Nos Champagnes</h2></div>
-    <div class="wine champagne">
-        <?php 
-                $img = glob('img/vins/*.{png,jpeg,jpg}', GLOB_BRACE);
-
-                foreach($img as $value){
-                ?>
-                <a href="">
-                    <img class="nosVins" src="<?= $value ?>" alt=""/>
-                </a>
-
-        <?php } ?>
     </div>
 
 </main>
