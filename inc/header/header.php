@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="flickity.min.css">
-    <link rel="stylesheet" href="./css/vins.css">
     <link rel="stylesheet" href="./css/Apropos.css">
     <link rel="stylesheet" href="./css/panier.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
