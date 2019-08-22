@@ -2,32 +2,37 @@
 require("inc/dbconnect.php");
 session_start();
 
+$_SESSION["panier"] = $_POST["idteille"];
+// $panier = implode(",",$_SESSION['panier']);
 
-$panier = [1,2,3,4];
-$panier = implode(",",$panier);
+var_dump($_SESSION['panier']);
 
-var_dump($panier);
+// var_dump($panier);
+
+
 
 
 include("inc/header/header.php");
 
+function DeleteId(){
+    array_splice($panier,$rows->id,1);
+}
 
+// $sql = "SELECT * FROM vins WHERE id = '" . $_SESSION["panier] ."' ";
 
-// $sql = "SELECT * FROM vins WHERE id = '" . $panier ."' ";
-
-$sql = "SELECT * FROM vins WHERE id IN ($panier)";
+$sql = "SELECT * FROM vins WHERE id IN ('". $_SESSION["panier"] ."') ";
   $data = $bdd->query($sql);
 
   $data->setFetchMode(PDO::FETCH_OBJ);
 
     echo "<br> <br> <br> <br> <br>";
 
-        function DeleteId(){
-            array_splice($panier,$rows->id,1);
-        }
-
+       
    
 ?>
+   
+
+    
     <table>
         <thead>
             <tr>
@@ -54,10 +59,12 @@ $sql = "SELECT * FROM vins WHERE id IN ($panier)";
                     <td> <button onclick='DeleteId()'>Supprimez-moi!</button> </td>
                </tr>
                 ";
-            }
+            } 
+           
     ?>
         </tbody>
     </table>
+
 
 
 </header>
