@@ -1,6 +1,6 @@
 <?php 
-    $rootUser = "root";
-    $rootPass = "";
+    $rootUser = "gauthier2";
+    $rootPass = "AcdVH#33by";
 
 
     try
@@ -12,6 +12,5 @@
     {
         die('Erreur : ' . $e->getMessage());
     }
-
 
 ?>
