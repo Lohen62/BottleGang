@@ -79,7 +79,7 @@ session_start();
     <div class="wine blanc">
         <div class="main-carousel">
             <?php 
-          $sql = "SELECT * FROM vins WHERE type = 'Rouge'";
+          $sql = "SELECT * FROM vins WHERE type = 'Blanc'";
                 $data = $bdd->query($sql);
 
                 $data->setFetchMode(PDO::FETCH_OBJ);
@@ -112,7 +112,7 @@ session_start();
     <div class="wine rosé">
     <div class="main-carousel">
             <?php 
-          $sql = "SELECT * FROM vins WHERE type = 'Rouge'";
+          $sql = "SELECT * FROM vins WHERE type = 'Rose'";
                 $data = $bdd->query($sql);
 
                 $data->setFetchMode(PDO::FETCH_OBJ);
@@ -145,7 +145,7 @@ session_start();
     <div class="wine bordeaux">
     <div class="main-carousel">
             <?php 
-          $sql = "SELECT * FROM vins WHERE type = 'Rouge'";
+          $sql = "SELECT * FROM vins WHERE type = 'Champagne'";
                 $data = $bdd->query($sql);
 
                 $data->setFetchMode(PDO::FETCH_OBJ);
