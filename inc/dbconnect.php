@@ -1,16 +1,17 @@
 <?php 
-    function ConnectionDatabase(){
-        try {
-            $user = "root";
-            $pass = "";
-            $pdo = new PDO('mysql:host=localhost;dbname=bottlegang', $user, $pass);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO:: ERRMODE_EXCEPTION);
-            return $pdo;
-        } catch (PDOException $e) {
-            print "erreur !:" .$e->getmessage() . "<br/>";
-            die();
-        }
-    }
-    
+    $rootUser = "root";
+    $rootPass = "";
 
-    ?>
+
+    try
+    {
+        $bdd = new PDO('mysql:host=localhost;dbname=bottlegqng;charset=utf8', $rootUser, $rootPass);
+        $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    }
+    catch (Exception $e)
+    {
+        die('Erreur : ' . $e->getMessage());
+    }
+
+
+?>
