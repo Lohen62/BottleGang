@@ -1,8 +1,9 @@
 <?php  include "inc/header/header.php";?>
 
 <div class="tout">
-
-    <div class="personne">
+    <span class="text1">Bottle Gang</span>
+    <span class="text2">Test bla bla bla</span>
+    <!-- <div class="personne">
 
         <div class="photo"></div>
 
@@ -43,9 +44,8 @@
             qui est aux commandes.</p>
         </div>
     </div>
-
+-->
 </div>
 
-<div class="maps"></div>
 
 <?php include "inc//footer/footer.php"?>

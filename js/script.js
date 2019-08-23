@@ -23,6 +23,28 @@ friction: 0.18
 var flkty = new Flickity( '.main-carousel', {
   // options
 });
-console.log("fsaaaredszerteaafdsf");
 
 
+
+function animNav()
+{
+    var nav = document.querySelector(".navbar");
+    var liste = document.querySelectorAll(".itemMenu");
+
+    if(scrollY>0)
+    {
+        nav.classList.add("navbarActive");
+        liste.forEach(michel => {
+          michel.classList.add("itemMenuActive");
+        });
+    }
+    else
+    {
+      nav.classList.remove("navbarActive");
+      liste.forEach(michel => {
+        michel.classList.remove("itemMenuActive");
+      });
+    }
+}
+
+addEventListener("scroll", animNav);

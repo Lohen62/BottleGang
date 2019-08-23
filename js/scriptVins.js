@@ -27,7 +27,30 @@ groupCells : 4
 
 
 
+function animNav()
+{
+    var nav = document.querySelector(".navbar");
+    var liste = document.querySelectorAll(".itemMenu");
+  var caddie = document.querySelector(".panier");
+    if(scrollY>0)
+    {
+        nav.classList.add("navbarActive");
+        liste.forEach(michel => {
+          michel.classList.add("itemMenuActive");
+        });
+        caddie.classList.add("panierActive");
+    }
+    else
+    {
+      nav.classList.remove("navbarActive");
+      liste.forEach(michel => {
+        michel.classList.remove("itemMenuActive");
+      });
+      caddie.classList.remove("panierActive");
+    }
+}
 
+addEventListener("scroll", animNav);
 
 
 

@@ -12,13 +12,61 @@
 }
 
 .tout{
+    /* height: 100vh;
+    background-image: url(../img/Apropos/Sanstitre-1.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;  */
     height: 100vh;
     width: 100%;
-    background-image: url(../img/Apropos/Sanstitre-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tout span
+{
+
+    text-transform: uppercase;
+    display : block;
+}
+.text1
+{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color:white;
+    margin-bottom: 20px;
+    background: rgb(32, 32, 32);
+    position: relative;
+    animation: text 3s 1;
+}
+.text2
+{
+    font-size: 30px;
+    color : orange;
 }
 
+@keyframes text
+{
+    0%{
+        color: rgb(32, 32, 32);
+        margin-bottom: -45px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom:-45px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
 .personne{
     height: 45vh;
     display: flex;
