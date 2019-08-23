@@ -86,7 +86,7 @@ header
     right: 13%;
     top: 50%;
     transform: translateY(-50%);
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
     font-size: 3vh !important;
 }
 .nbrArticles{

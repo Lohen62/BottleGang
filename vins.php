@@ -121,7 +121,8 @@ require("inc/dbconnect.php");
                                 <p class='prix'>" . $rows->prix . " € </p>
                                 <form action='./panier.php' method='get'>
                                     <input type='hidden'  name='idteille' value='".$rows->id."'>
-                                    
+                                    <input type='hidden'  name='nomteille' value='".$rows->nom."'>
+                                    <input type='hidden'  name='prixteille' value='".$rows->prix."'>
                                     <button class='acheter'>Ajouter au panier</button>
                                     <select name='qte' class='qte'>
                                             <option value='1'>1</option>
@@ -165,9 +166,10 @@ require("inc/dbconnect.php");
                                 <h3 class='teilletitle'>" . $rows->nom ."</h3>
                                 <p class='desk'>". $rows->description ."</p>
                                 <p class='prix'>" . $rows->prix . " € </p>
-                                <form action='./panier.php' method='post'>
+                                <form action='./panier.php' method='get'>
                                     <input type='hidden'  name='idteille' value='".$rows->id."'>
-                                    
+                                    <input type='hidden'  name='nomteille' value='".$rows->nom."'>
+                                    <input type='hidden'  name='prixteille' value='".$rows->prix."'>
                                     <button class='acheter'>Ajouter au panier</button>
                                     <select name='qte' class='qte'>
                                             <option value='1'>1</option>
@@ -211,8 +213,10 @@ require("inc/dbconnect.php");
                                 <h3 class='teilletitle'>" . $rows->nom ."</h3>
                                 <p class='desk'>". $rows->description ."</p>
                                 <p class='prix'>" . $rows->prix . " € </p>
-                                <form action='./panier.php' method='post'>
+                                <form action='./panier.php' method='get'>
                                     <input type='hidden'  name='idteille' value='".$rows->id."'>
+                                    <input type='hidden'  name='nomteille' value='".$rows->nom."'>
+                                    <input type='hidden'  name='prixteille' value='".$rows->prix."'>
                                     <button class='acheter'>Ajouter au panier</button>
                                     <select name='qte' class='qte'>
                                             <option value='1'>1</option>
