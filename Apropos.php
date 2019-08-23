@@ -1,4 +1,4 @@
-<?php  session_start(); include "inc/header/header.php";?>
+<?php  include "inc/header/header.php";?>
 
 <div class="tout">
 

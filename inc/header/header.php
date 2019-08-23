@@ -1,4 +1,6 @@
-
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +29,17 @@
             <li><a href="index.php" class="itemMenu">Accueil</a></li>
             <li><a href="Apropos.php" class="itemMenu">A propos</a></li>
             <li><a href="vins.php" class="itemMenu">Nos vins</a></li>
+            <i class="panier fas fa-cart-plus">
+                <?php
+                    if(isset($_SESSION["panier"])){
+                        echo '<div class="nbrArticles">' .count($_SESSION['panier']). '</div>';
+                    }
+                    else{
+                        echo '<div class="nbrArticles">0</div>';
+                    }
+
+                ?>
+            </i>
             <li><a href="panier.php" class="itemMenu">Panier</a></li>
         </ul>
     </nav>

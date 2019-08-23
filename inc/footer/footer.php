@@ -41,7 +41,6 @@
             <p class="TexteFooter02"> 11-3 Rue Crébillon <br> 21700 Nuits-Saint-Georges <br> +33(0)5 54 53 00 17</p>
         </div>      
         <div class="right"> 
-            <h2 class="titreFooter">réseaux sociaux</h2>
             <a href="https://www.facebook.com/" target=_blank> <i class="fab fa-facebook"></i></a>
             <a href="https://www.twitter.com/" target=_blank> <i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/" target=_blank>  <i class="fab fa-instagram"></i></a>

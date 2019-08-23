@@ -17,7 +17,6 @@ require("inc/dbconnect.php");
     <link rel="stylesheet" href="./css/flickity.min.css">
     <link rel="stylesheet" href="./css/vins.css">
     <link rel="stylesheet" href="./css/Apropos.css">
-    <link rel="stylesheet" href="./css/panier.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>BottleGang Accueil</title>
 </head>
@@ -33,6 +32,17 @@ require("inc/dbconnect.php");
             <li><a href="index.php" class="itemMenu">Accueil</a></li>
             <li><a href="Apropos.php" class="itemMenu">A propos</a></li>
             <li><a href="vins.php" class="itemMenu">Nos vins</a></li>
+            <i class="panier fas fa-cart-plus">
+                <?php
+                    if(isset($_SESSION["panier"])){
+                        echo '<div class="nbrArticles">' .count($_SESSION['panier']). '</div>';
+                    }
+                    else{
+                        echo '<div class="nbrArticles">0</div>';
+                    }
+
+                ?>
+            </i>
             <li><a href="panier.php" class="itemMenu">Panier</a></li>
         </ul>
     </nav>
@@ -242,7 +252,6 @@ require("inc/dbconnect.php");
             <p class="TexteFooter02"> 11-3 Rue Crébillon <br> 21700 Nuits-Saint-Georges <br> +33(0)5 54 53 00 17</p>
         </div>      
         <div class="right"> 
-            <h2 class="titreFooter">réseaux sociaux</h2>
             <a href="https://www.facebook.com/" target=_blank> <i class="fab fa-facebook"></i></a>
             <a href="https://www.twitter.com/" target=_blank> <i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/" target=_blank>  <i class="fab fa-instagram"></i></a>
