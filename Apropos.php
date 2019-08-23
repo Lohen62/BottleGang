@@ -1,5 +1,6 @@
 <?php  include "inc/header/header.php";?>
 
+</header>
 <div class="tout">
     <div class="cache"></div>
     <span class="titreBG anim-writing">Bottle Gang</span>
@@ -73,6 +74,8 @@
     </div>
 -->
 </div>
+<div class="ligneSep"></div>
+
 
 
 <?php include "inc//footer/footer.php"?>

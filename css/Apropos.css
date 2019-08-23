@@ -13,7 +13,7 @@
 
 .tout{
     height: 100vh;
-    width: 100%;
+    width: 101%;
     background-color: rgb(32, 32, 32);
     text-align: center;
     position: absolute;
@@ -83,7 +83,7 @@
     position: relative;
     width: 60%;
     height: 60%;
-    font-size: 2vh;
+    font-size: 2.5vh;
     color : orange;
     z-index: -2;
 }
@@ -124,6 +124,13 @@
         top: 0%;
     }
 }
+
+.ligneSep{
+    width: 100%;
+    height: 0.5vh;
+    background: black;
+}
+
 /* .personne{
     height: 45vh;
     display: flex;
