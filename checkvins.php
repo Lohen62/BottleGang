@@ -1,4 +1,4 @@
-<?php require './inc/dbconnect.php';
+<?php session_start(); require './inc/dbconnect.php'; 
 
 $name = $_POST["name"];
 $year = $_POST["year"];

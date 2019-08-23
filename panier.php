@@ -1,82 +1,58 @@
 <?php
-require("inc/dbconnect.php");
 session_start();
-
-$_SESSION["panier"] = $_POST["idteille"];
-// $panier = implode(",",$_SESSION['panier']);
-
-var_dump($_SESSION['panier']);
-
-// var_dump($panier);
-
-
-
-
-include("inc/header/header.php");
-
-function DeleteId(){
-    array_splice($panier,$rows->id,1);
+require("inc/dbconnect.php");
+// include("inc/header/header.php");
+if(!isset($_SESSION['panier']))
+{
+    $_SESSION['panier']=array();
 }
 
-// $sql = "SELECT * FROM vins WHERE id = '" . $_SESSION["panier] ."' ";
+$idTeille = isset($_GET['idteille']) ? $_GET['idteille'] : null;
+$nomTeille = isset($_GET['nomteille']) ? $_GET['nomteille'] : null;
+$prixTeille = isset($_GET['prixteille']) ? $_GET['prixteille'] : null;
+$qteTeille  = isset($_GET['qte'])  ? $_GET['qte']  : 1;
 
-$sql = "SELECT * FROM vins WHERE id IN ('". $_SESSION["panier"] ."') ";
-  $data = $bdd->query($sql);
+$_SESSION['panier'][$idTeille]['nom']  = $nomTeille;
+$_SESSION['panier'][$idTeille]['prix'] = $prixTeille;
+$_SESSION['panier'][$idTeille]['qte'] = $qteTeille;
 
-  $data->setFetchMode(PDO::FETCH_OBJ);
-
-    echo "<br> <br> <br> <br> <br>";
-
-       
-   
-?>
-   
-
+echo '<h2>Contenu de votre panier</h2><ul>';
+if (isset($_SESSION['panier']) && count($_SESSION['panier'])>0){
+    $total_panier = 0;
     
-    <table>
-        <thead>
-            <tr>
-            <td></td>
-            <td>Nom</td>
-            <td>Annee</td>
-            <td>Description</td>
-            <td>Prix</td>
-            <td>Effacer</td>
-            </tr>
-        </thead>
-        <tbody>
-
-     <?php 
-
-        while($rows = $data->fetch()){
-        echo " 
-                <tr>
-                    <td></td>
-                    <td> " .$rows->nom . "  </td>
-                    <td>" .$rows->annee . " </td>
-                    <td>" .$rows->description . " </td>
-                    <td>" .$rows->prix . " € </td>
-                    <td> <button onclick='DeleteId()'>Supprimez-moi!</button> </td>
-               </tr>
-                ";
-            } 
-           
-    ?>
-        </tbody>
-    </table>
+    
+    foreach($_SESSION['panier'] as $idTeille=>$article_acheté){
+        if (isset($article_acheté['nom']) && isset($article_acheté['prix'])){
+            echo '<li><form action="./delete.php" method="get">', $article_acheté['nom'], ' (', number_format($article_acheté['prix'], 2, ',', ' '), ' €) ',
+            '<input type="hidden" name="idTeille" value="', $idTeille , '" /><br>
+            <br />Qté:' . '  ' . $article_acheté['qte'] . '<br><br>
+            
+            <input type="submit" name="supprimer" value="supprimer" />
+            </form>
+            </li>';
+            
+            // Calcule le prix total du panier 
+            $total_panier += $article_acheté['prix']  * $article_acheté['qte'];
+        }
+        
+}
+echo "<a href='./vins.php'>Ajouter un autre article<a> <br> <br><a href='./meurs.php'>Annulez votre commande<a>";
+    echo '<hr><h3>Total: ', number_format($total_panier, 2, ',', ' '), ' €'; // Affiche le total du panier
+  }
+  else { echo 'Votre panier est vide'; } // Message si le panier est vide
+  echo "</ul>";
+  ?>
 
 
 
-</header>
 
-<!-- while($rows = $data->fetch()){
-        echo 'id : '. $rows->id . " / name : " . $rows->nom . "<br>"; -->
 
+ 
 <?php
-include("inc/footer/footer.php");
-?>
+// include("inc/footer/footer.php");
+?> 
 
 
 
 
-
+ 
