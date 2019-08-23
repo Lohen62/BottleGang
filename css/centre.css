@@ -57,6 +57,9 @@
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    background-image: url(../img/centre/vin_rouge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .news2{
@@ -66,6 +69,9 @@
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    background-image: url(../img/centre/tour_blanche.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .news3{
@@ -75,6 +81,9 @@
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    background-image: url(../img/centre/clos_des_fees.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .selection{
@@ -107,6 +116,9 @@
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    background-image: url(../img/centre/vins-rouge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .select2{
@@ -116,6 +128,9 @@
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    background-image: url(../img/centre/symphonie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .select3{
@@ -125,6 +140,9 @@
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
+    background-image: url(../img/centre/faustine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cataloguebtn{
@@ -144,6 +162,8 @@
     margin-top: 5vh;
     font-size:  3vh;
     text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 

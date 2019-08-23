@@ -38,7 +38,7 @@
     
         <div class="trait"></div>
         
-        <div class="vins" href="#">Voir tous nos vins</div>
+        <a class="vins" href="../vins.php">Voir tous nos vins</a>
     
     </div>
 
