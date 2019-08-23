@@ -1,0 +1,103 @@
+header
+{
+    height: 100vh;
+    width : 100%;
+}
+
+.navbar
+{
+    height: 9vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position : relative;
+    z-index: 999; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoName
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 16vw;
+    margin-left: 4vh;
+}
+.logoName img
+{
+    object-fit: contain;
+    height : 8vh;
+}
+.logoName h1
+{
+    color : #FFF;
+    font-family: king;
+    font-size: 6vh;
+    font-weight: 100;
+}
+.menu
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width : 50vw;
+}
+
+.itemMenu
+{
+    text-decoration: none;
+    color : white;
+    margin-right: 3vh;
+    font-size: 2vh;
+    padding: 0 20px;
+
+}
+.menu li
+{
+    width : 25vh;
+    margin-right: 1vh;
+    display: flex;
+}
+.menu li a
+{
+    width : 25vh;
+}
+
+
+.menu li::before
+{
+    content : "";
+    width : 0px;
+    height: 5px;
+    background: rgb(255, 166, 0);
+    position: absolute;
+    top : 80%;
+    transition : .4s;
+}
+.menu li:hover::before 
+{
+    width : 7vh;
+    transform: translateX(100%);
+}
+
+.contenuTitle
+{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 4vh;
+}
+
+section
+{
+    height: 60vh;
+}
+
+.truks
+{
+    display: flex;
+    width: 100vw;
+}
+.trucs
+{
+    margin-right: 8vh;
+}
