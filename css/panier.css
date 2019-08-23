@@ -89,7 +89,7 @@ header
 
 section
 {
-    height: 60vh;
+    height: 85vh;
 }
 
 .truks
@@ -99,5 +99,74 @@ section
 }
 .trucs
 {
-    margin-right: 8vh;
+    margin-right: 5vh;
+    list-style-type: none;
+}
+.supp
+{
+    background-color: rgb(231, 65, 65);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;  
+}
+
+.total
+{
+    margin-top: 6vh;
+}
+.addNew
+{
+    background-color: rgb(65, 109, 231);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    width : 22vh;
+}
+.cancel
+{
+    background-color: rgb(231, 65, 65);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;  
+    width : 22vh;  
+}
+.payerTout
+{
+    display:flex;
+    width : 25vw;
+    justify-content: space-between;
+}
+.goPayer
+{ 
+    display: flex;
+    padding : 1.5vh 3vh;
+
+    background-color: rgb(6, 133, 38);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 3vh;
+
+
+    height: 6vh;
 }

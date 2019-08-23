@@ -46,7 +46,7 @@ $_SESSION['panier'][$idTeille]['qte'] = $qteTeille;
     <section>
 <?php
 
-echo '<h2 class="contenuTitle">Contenu de votre panier</h2><ul>';
+echo '<h2 class="contenuTitle">Contenu de votre panier</h2><br><ul>';
 if (isset($_SESSION['panier']) && count($_SESSION['panier'])>0){
     $total_panier = 0;
     
@@ -55,10 +55,10 @@ if (isset($_SESSION['panier']) && count($_SESSION['panier'])>0){
     {
         if (isset($article_acheté['nom']) && isset($article_acheté['prix'])){
             echo '<li class="trucs"><form action="./delete.php" method="get">', $article_acheté['nom'], ' (', number_format($article_acheté['prix'], 2, ',', ' '), ' €) ',
-            '<input type="hidden" name="idTeille" value="', $idTeille , '" /><br>
-            <br />Qté:' . '  ' . $article_acheté['qte'] . '<br><br>
+            '<input type="hidden" name="idTeille" value="', $idTeille , '" /><hr><br>
+            <br />Qté:' . '  ' . $article_acheté['qte'] . '<hr><br><br>
             
-            <input type="submit" name="supprimer" value="supprimer" />
+            <input class="supp "type="submit" name="supprimer" value="supprimer" /><br><br><br><br>
             </form>
             </li>';
             
@@ -68,8 +68,8 @@ if (isset($_SESSION['panier']) && count($_SESSION['panier'])>0){
     } ?>
     </div>
     <?php
-echo "<a href='./vins.php'>Ajouter un autre article<a> <br> <br><a href='./meurs.php'>Annulez votre commande<a>";
-    echo '<hr><h3>Total: ', number_format($total_panier, 2, ',', ' '), ' €'; // Affiche le total du panier
+echo "<a class='addNew' href='./vins.php'>Ajouter un autre article<a> <br> <br><a class='cancel' href='./meurs.php'>Annulez votre commande<a>";
+    echo '<hr><div class="payerTout"><h3 class="total">Total: ', number_format($total_panier, 2, ',', ' '), ' €</h3><a class="goPayer" href="">Payer</a></div>'; // Affiche le total du panier
   }
   else { echo 'Votre panier est vide'; } // Message si le panier est vide
   echo "</ul>";
