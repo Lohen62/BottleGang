@@ -4,18 +4,14 @@
 
 }
 
-.titre{
+/* .titre{
     font-family: "titre";
     font-size: 3vh;
     text-decoration: underline white;
     font-style: italic;
-}
+} */
 
 .tout{
-    /* height: 100vh;
-    background-image: url(../img/Apropos/Sanstitre-1.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;  */
     height: 100vh;
     width: 100%;
     background-color: rgb(32, 32, 32);
@@ -29,13 +25,49 @@
     justify-content: center;
     flex-direction: column;
 }
-.tout span
+/* .tout span
 {
 
     text-transform: uppercase;
     display : block;
+} */
+.titreBG
+{
+    font-size: 4vh;
+    font-weight: 300;
+    letter-spacing: 0.2vmin;
+    text-transform: uppercase;
+    color:white;
+    margin-bottom: 5%;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    background: rgb(32, 32, 32);
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
 }
-.text1
+.anim-writing{
+    animation: texte 5s 1, typewriter 2.5s steps(40) 1s 1 normal both, blinkTextCursor 1000ms steps(40) infinite normal;
+}
+
+@keyframes typewriter{
+    from{
+        width: 0;
+    }
+    to{
+        width: 15vw;
+    }
+}
+
+@keyframes blinkTextCursor{
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+/* .text1
 {
     font-size: 60px;
     font-weight: 700;
@@ -45,29 +77,54 @@
     background: rgb(32, 32, 32);
     position: relative;
     animation: text 3s 1;
-}
-.text2
+} */
+.texteJM
 {
-    font-size: 30px;
+    position: relative;
+    width: 60%;
+    height: 60%;
+    font-size: 2vh;
     color : orange;
+    z-index: -2;
 }
 
-@keyframes text
+.cache{
+    position: absolute;
+    width: 100%;
+    height:70vh;
+    top: -45%;
+    background-color: rgb(32, 32, 32);
+    animation: cache 5s 1;
+}
+
+@keyframes texte
 {
     0%{
         color: rgb(32, 32, 32);
-        margin-bottom: -45px;
+        margin-bottom: -30%;
     }
     30%{
-        letter-spacing: 25px;
-        margin-bottom:-45px;
+        letter-spacing: 6vmin;
+        margin-bottom:-30%;
     }
     85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
+        letter-spacing: 0.2vmin;
+        margin-bottom: -30%;
     }
 }
-.personne{
+@keyframes cache
+{
+    0%{
+        top: 0%;
+    }
+    30%{
+        top: 0%;
+    }
+    85%{
+        top: 0%;
+    }
+}
+/* .personne{
     height: 45vh;
     display: flex;
     flex-direction: rows;
@@ -136,6 +193,6 @@
     height : 1vh;
     width : 100%;
     background-color: rgb(0, 0, 0);
-}
+} */
 
 
