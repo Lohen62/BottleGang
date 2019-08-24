@@ -9,11 +9,11 @@
                 </div>
             </div>
             
-            <div class="news1"></div>
+            <div class="newsArticle"><img src="./img/centre/clos_des_fees.jpg" alt=""></div>
             
-            <div class="news2"></div>
+            <div class="newsArticle"><img src="./img/centre/tour_blanche.jpg" alt=""></div>
             
-            <div class="news3"></div>
+            <div class="newsArticle"><img src="./img/centre/vin_rouge.jpg" alt=""></div>
         </div>
 
         <div class="selection">
@@ -24,11 +24,11 @@
                 </div>
             </div>
         
-            <div class="select1"></div>
+            <div class="newsArticle"><img src="./img/centre/faustine.jpg" alt=""></div>
         
-            <div class="select2"></div>
+            <div class="newsArticle"><img src="./img/centre/vins-rouge.jpg" alt=""></div>
         
-            <div class="select3"></div>
+            <div class="newsArticle"><img src="./img/centre/symphonie.jpg" alt=""></div>
     
         </div>
 
@@ -38,7 +38,7 @@
     
         <div class="trait"></div>
         
-        <a class="vins" href="../vins.php">Voir tous nos vins</a>
+        <a class="vins" href="./vins.php">Voir tous nos vins</a>
     
     </div>
 

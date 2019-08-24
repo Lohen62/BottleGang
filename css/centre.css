@@ -50,40 +50,32 @@
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
 }
 
-.news1{
+.newsArticle{
     height: 30vh;
     width: 30vh;
     background-color: white;
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    background-image: url(../img/centre/vin_rouge.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    transition: .5s;
 }
 
-.news2{
-    height: 30vh;
-    width: 30vh;
-    background-color: white;
-    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    background-image: url(../img/centre/tour_blanche.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.newsArticle:hover
+{
+    height: 32vh;
+    width: 32vh;
 }
-
-.news3{
+.newsArticle:hover img
+{
+    height: 32vh;
+    width: 32vh;
+}
+.newsArticle img
+{
+    object-fit: contain;
     height: 30vh;
     width: 30vh;
-    background-color: white;
-    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    background-image: url(../img/centre/clos_des_fees.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    transition: .5s;
 }
 
 .selection{
@@ -107,42 +99,6 @@
     -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
     box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-}
-
-.select1{
-    height: 30vh;
-    width: 30vh;
-    background-color: white;
-    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    background-image: url(../img/centre/vins-rouge.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.select2{
-    height: 30vh;
-    width: 30vh;
-    background-color:white;
-    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    background-image: url(../img/centre/symphonie.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.select3{
-    height: 30vh;
-    width: 30vh;
-    background-color: white;
-    -webkit-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    box-shadow: -3px 3px 25px -6px rgba(0,0,0,0.75);
-    background-image: url(../img/centre/faustine.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .cataloguebtn{
